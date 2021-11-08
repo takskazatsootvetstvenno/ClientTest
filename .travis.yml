@@ -27,7 +27,7 @@ deploy:
   provider: releases
   skip_cleanup: true
   file: "clientTest"
-  github-token: $GITHUB_TOKEN
+  github-token: "travis_ci_token"
   local_dir: build
   on:
-    branch: master 
+    branch: main 
