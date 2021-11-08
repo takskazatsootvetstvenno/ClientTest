@@ -37,5 +37,7 @@ int main()
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(pWindow);
 	system("pause");
+	int a;
+	std::cin>>a;
 	return 0;
 }
