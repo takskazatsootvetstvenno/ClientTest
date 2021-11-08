@@ -6,7 +6,7 @@ compiler:
   - clang
 install:
 #install python
-apt-get install
+  - apt-get install
 # Install conan
   - pip install conan
 # Automatic detection of your arch, compiler, etc.
