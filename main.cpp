@@ -12,7 +12,7 @@ void init()
 
 	auto m_pWindow = glfwCreateWindow(800, 600, "test conan", nullptr, nullptr);
 	if (!m_pWindow) {
-		std::cout << "\nCan't create Window!!" << std::endl;
+		std::cout << "\nCan't create Window!! " << std::endl;
 		glfwTerminate();
 	}
 	glfwMakeContextCurrent(m_pWindow);
