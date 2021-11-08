@@ -1,3 +1,4 @@
+#!/bin/bash
 pip install conan
 apt-get -y install cmake
 rm -r build
