@@ -23,7 +23,7 @@ script:
 # Run your tests
 #  - ctest .
 deploy:
- # provider: pages
+  provider: releases
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: build
