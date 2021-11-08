@@ -7,7 +7,8 @@ compiler:
   - clang
 install:
 #install python
-  - sudo apt install python
+  - sudo apt install python3
+  - sudo apt-get install libgl1-mesa-dri
   - python --version
 # Install conan
   - pip install conan
