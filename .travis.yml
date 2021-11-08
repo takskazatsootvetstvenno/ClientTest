@@ -24,8 +24,6 @@ script:
   - ls
   - cd bin
   - ls
-  - make zip
-  - ls
   
 # Run your tests
 #  - ctest .
