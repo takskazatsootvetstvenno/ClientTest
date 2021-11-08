@@ -1,8 +1,10 @@
-os: windows
+os: 
+  - windows
+  - linux
 language: cpp
-python: "3.7"
 dist: windows
 compiler:
+  - gcc
   - clang
 install:
 #install python
