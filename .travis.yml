@@ -20,11 +20,13 @@ script:
 # Call your build system
   - cmake . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
   - cmake --build .
+  - ls
 # Run your tests
 #  - ctest .
 deploy:
   provider: releases
   skip_cleanup: true
+  file: "clientTest"
   github-token: $GITHUB_TOKEN
   local_dir: build
   on:
