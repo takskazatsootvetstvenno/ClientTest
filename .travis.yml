@@ -2,7 +2,7 @@ os:
   - windows
   - linux
 language: cpp
-dist: windows
+#dist: windows
 compiler:
   - gcc
   - clang
