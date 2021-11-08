@@ -28,7 +28,7 @@ script:
 deploy:
   provider: releases
   skip_cleanup: true
-  file: "bin/clientTest"
+  file: "/bin/clientTest"
   #github-token: $travis_ci_token
   api_key: '$GITHUB_API_KEY'
   local_dir: build
