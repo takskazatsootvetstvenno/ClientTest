@@ -32,7 +32,7 @@ deploy:
   provider: releases
   skip_cleanup: true
   file_glob: true
-  file: ClientTest.zip
+  file: bin
   api_key: '$GITHUB_API_KEY'
   on:
     tags: true
