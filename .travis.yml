@@ -23,10 +23,9 @@ script:
 # Run your tests
 #  - ctest .
 deploy:
-   provider: releases
+  provider: pages
   skip_cleanup: true
-  github-token: travis_ci_token
+  github-token: $GITHUB_TOKEN
   local_dir: build
   on:
-    branch: master
-    
+    branch: master 
