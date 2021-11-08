@@ -16,9 +16,9 @@ install:
   - conan user
 script:
 # Download dependencies and build project
-  - conan install . --profile msvc16
+  - conan install . 
 # Call your build system
-  - cmake . -G "Visual Studio 2019"
+  - cmake . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
   - cmake --build .
 # Run your tests
 #  - ctest .
