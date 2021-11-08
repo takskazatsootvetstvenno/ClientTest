@@ -8,7 +8,7 @@ compiler:
 install:
 #install python
   - sudo apt install python3
-  - sudo apt-get install libgl1-mesa-dri
+  - sudo apt-get install libgl1-mesa-dev
   - python --version
 # Install conan
   - pip install conan
