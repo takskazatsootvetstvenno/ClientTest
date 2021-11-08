@@ -24,15 +24,16 @@ script:
   - ls
   - cd bin
   - ls
+  - make zip
+  - ls
+  
 # Run your tests
 #  - ctest .
 deploy:
   provider: releases
   skip_cleanup: true
   file_glob: true
-  file: 
-   - "/home/travis/build/takskazatsootvetstvenno/ClientTest/bin/*"
-   - "/home/travis/build/takskazatsootvetstvenno/ClientTest/bin/clientTest"
+  file: ClientTest.zip
   api_key: '$GITHUB_API_KEY'
   on:
-    tags: true 
+    branch: main 
