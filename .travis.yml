@@ -1,0 +1,19 @@
+os: windows
+language: cpp
+python: "3.7"
+dist: windows
+compiler:
+  - clang
+install:
+# Install conan
+  - pip install conan
+# Automatic detection of your arch, compiler, etc.
+  - conan user
+script:
+# Download dependencies and build project
+  - conan install .
+# Call your build system
+  - cmake . -G "Visual Studio 2019"
+  - cmake --build .
+# Run your tests
+#  - ctest .
