@@ -35,4 +35,4 @@ deploy:
   file: ClientTest.zip
   api_key: '$GITHUB_API_KEY'
   on:
-    tags: true 
+    tags: true
