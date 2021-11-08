@@ -28,13 +28,11 @@ script:
 # Run your tests
 #  - ctest .
 deploy:
-  before_deploy: 
-  - pwd
-  - ls
+  before_deploy: "pwd"
   provider: releases
   skip_cleanup: true
   file_glob: true
   file: ClientTest.zip
   api_key: '$GITHUB_API_KEY'
   on:
-    branch: main 
+    tags: true 
