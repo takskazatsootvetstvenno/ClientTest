@@ -35,4 +35,4 @@ deploy:
    - "/home/travis/build/takskazatsootvetstvenno/ClientTest/bin/clientTest"
   api_key: '$GITHUB_API_KEY'
   on:
-    branch: main 
+    tags: true 
