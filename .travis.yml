@@ -1,6 +1,6 @@
 os: 
-  - windows
   - linux
+  #- windows
 language: cpp
 #dist: windows
 compiler:
@@ -22,3 +22,10 @@ script:
   - cmake --build .
 # Run your tests
 #  - ctest .
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
