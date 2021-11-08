@@ -20,6 +20,7 @@ script:
 # Call your build system
   - cmake . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
   - cmake --build .
+  - pwd
   - ls
   - cd bin
   - ls
