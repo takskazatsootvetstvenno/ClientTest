@@ -1,7 +1,7 @@
 #!/bin/bash
-pip install conan
-apt-get -y install cmake
-apt-get install libgl1-mesa-dev
+sudo pip install conan
+sudo apt-get -y install cmake
+sudo apt-get install libgl1-mesa-dev
 rm -r build
 mkdir build
 cd build
