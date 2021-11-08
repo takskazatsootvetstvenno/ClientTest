@@ -4,11 +4,10 @@ os:
 language: cpp
 #dist: windows
 compiler:
-  - gcc
   - clang
 install:
 #install python
-  - apt-get install
+  - apt-get install python
 # Install conan
   - pip install conan
 # Automatic detection of your arch, compiler, etc.
