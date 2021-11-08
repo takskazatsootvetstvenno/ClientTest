@@ -22,12 +22,13 @@ script:
   - cmake --build .
   - ls
   - cd bin
+  - ls
 # Run your tests
 #  - ctest .
 deploy:
   provider: releases
   skip_cleanup: true
-  file: "clientTest"
+  file: "bin/clientTest"
   #github-token: $travis_ci_token
   api_key: '$GITHUB_API_KEY'
   local_dir: build
